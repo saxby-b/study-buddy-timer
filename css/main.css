@@ -1,0 +1,22 @@
+body {
+    width: 100%;
+    background-color: #F59CA9;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+}
+
+.timer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 5px solid whitesmoke;
+}
+
+.time {
+    margin-top: 20px;
+    border-radius: 5px;
+}
