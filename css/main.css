@@ -8,7 +8,7 @@ h1 {
     text-align: center;
 }
 
-.timer {
+.amount {
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -26,3 +26,14 @@ h1 {
     border: #A03E99 2px solid;
     
 }
+
+p.timer {
+    color: whitesmoke;
+    font-size: 60px;
+}
+
+p.timer-end {
+    color: whitesmoke;
+    font-size: 25px;
+}
+
