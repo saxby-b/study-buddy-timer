@@ -32,8 +32,12 @@ function displayTimeLeft(seconds) {
   const display = `${minutes}:${
     remainderSeconds < 10 ? "0" : ""
   }${remainderSeconds}`;
+  const finish = "Yay! You finished studying!!";
   document.title = display;
   timer.textContent = display;
+  if ((display = 0)) {
+    timer.textContent = finish;
+  }
 }
 
 function displayEndTime(timestamp) {
@@ -46,8 +50,8 @@ function displayEndTime(timestamp) {
 }
 
 function startTimer() {
-    const seconds = parseInt(this.dataset.time);
-    timer(seconds);
+  const seconds = parseInt(this.dataset.time);
+  timer(seconds);
 }
 
 times.forEach((time) => time.addEventListener("click", startTimer));
